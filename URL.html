@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/51db22a717.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <div class="login-form-container shadow">
+            <div class="login-form-right-side">
+                <div class="top-logo-wrap">
+
+                </div>
+                <h1>NAVER CLOUD PLATFORM</h1>
+                <p>welcome!</p>
+            </div>
+            <div class="login-form-left-side">
+                <div class="login-top-wrap">
+                </div>
+                <div class="login-input-container">
+                    <div>
+                        <div>
+                            <fieldset id="url">
+                            </fieldset>
+
+                            <script>
+                                var url = "https:\/\/줌 접속주소.com";
+                                document.getElementById("url").innerText = url;
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    function button_click() {
+        var password_data = "1111"
+        var password = document.getElementById("pwd_input").value;
+        if (password == password_data) {
+            location.href = "URL.html";
+        }
+        else {
+            alert("비밀번호를 확인해주세요.");
+        }
+    }
+</script>
+
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Alata', sans-serif;
+    }
+
+    .page-container {
+        width: 100vw;
+        height: 100vh;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .shadow {
+        -webkit-box-shadow: 27px 43px 43px -26px black;
+        -moz-box-shadow: 27px 43px 43px -26px black;
+        box-shadow: 27px 43px 43px -26px black;
+    }
+
+    .login-form-container {
+        background: white;
+        width: 860px;
+        height: 540px;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 10px black;
+        border-radius: 10px;
+    }
+
+    .login-form-right-side {
+        width: 50%;
+        border-radius: 10px 0px 0px 10px;
+        padding: 75px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        background-image: radial-gradient(ellipse farthest-corner at 0 140%, #00c71e 0%, #00c71e 100%, #00c71e 70%);
+    }
+
+        .login-form-right-side h1 {
+            color: white;
+            width: 100%;
+            text-align: right;
+            opacity: 1.9;
+        }
+
+        .login-form-right-side p {
+            padding-top: 50px;
+            font-size: 12px;
+            text-align: right;
+            opacity: 1.8;
+        }
+
+    .login-form-left-side {
+        width: 50%;
+        border-radius: 0px 10px 10px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        background: #ffffff;
+        background: linear-gradient(287deg, rgbargba(255,255,255,1) 0%, rgba(2, 182, 35, 1) 0%, rgba(2, 182, 35, 1) 100%);
+    }
+
+        .login-form-left-side .login-top-wrap {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+        }
+
+    .login-input-container {
+        padding-top: 120px;
+        width: 300px;
+    }
+
+        .login-input-container .login-input-wrap {
+            width: 300px;
+            height: 45px;
+            margin-top: 20px;
+            border-radius: 2px;
+            border-bottom: solid 2px #2178ff;
+        }
+
+            .login-input-container .login-input-wrap input {
+                background: none;
+                border: none;
+                line-height: 45px;
+                padding-left: 10px;
+                width: 267px;
+            }
+
+                .login-input-container .login-input-wrap input:focus {
+                    outline: none;
+                }
+    fieldset {
+        border-color: #00c71e;
+        border-width: 7px;
+        border-style: outset;
+        padding: 20px 120px;
+        margin: 40px 10px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+</style>
